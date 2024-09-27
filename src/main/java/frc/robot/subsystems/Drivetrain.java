@@ -13,10 +13,11 @@ import frc.robot.Constants.OperatorConstants;
 public class Drivetrain extends SubsystemBase {
   /** Creates a new Drivetrain. */
 //create the motor controller objects and put their ports in constants
-  private static final PWMVictorSPX m_leftFront = new PWMVictorSPX(OperatorConstants.m_FRONTLEFTMOTOR);
   private static final PWMVictorSPX m_leftBack = new PWMVictorSPX(OperatorConstants.m_BACKLEFTMOTOR);
   private static final PWMVictorSPX m_rightFront = new PWMVictorSPX(OperatorConstants.m_FRONTRIGHTMOTOR);
   private static final PWMVictorSPX m_rightBack = new PWMVictorSPX(OperatorConstants.m_BACKRIGHTMOTOR);
+  private static final PWMVictorSPX m_leftFront = new PWMVictorSPX(OperatorConstants.m_FRONTLEFTMOTOR);
+
 
   //pass them into mecanum drive object
   private static final MecanumDrive m_robotDrive = new MecanumDrive(m_rightFront, m_rightBack, m_leftFront, m_leftBack);
